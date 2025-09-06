@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nuevo producto - Admin</title>
+  <link rel="stylesheet" href="../style.css">
+  <script defer src="../scripts/regions.js"></script>
+  <script defer src="../scripts/admin.js"></script>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="../index.html">
+      <img src="../assets/img/logo_final.png" alt="logo"><span>TokyoStore Admin</span>
+    </a>
+    <nav class="menu">
+      <a href="../index.html">Ver tienda</a>
+    </nav>
+  </div>
+</header>
+<div class="container layout">
+  <aside class="sidebar card">
+    <nav class="menu" style="flex-direction:column">
+      <a href="index.html">Dashboard</a>
+      <a href="productos.html">Productos</a>
+      <a href="producto-nuevo.html">Nuevo producto</a>
+      <a href="usuarios.html">Usuarios</a>
+      <a href="usuario-nuevo.html">Nuevo usuario</a>
+    </nav>
+  </aside>
+  <main>
+
+<h1>Nuevo producto</h1>
+<form id="formProducto" class="form card" novalidate>
+  <div class="grid cols-2">
+    <div class="input"><label>Código</label><input id="pdCodigo" minlength="3" required></div>
+    <div class="input"><label>Nombre</label><input id="pdNombre" maxlength="100" required></div>
+    <div class="input" style="grid-column:1/3"><label>Descripción (opcional)</label>
+      <textarea id="pdDescripcion" maxlength="500" rows="4"></textarea></div>
+    <div class="input"><label>Precio</label><input id="pdPrecio" type="number" step="0.01" min="0" required></div>
+    <div class="input"><label>Stock</label><input id="pdStock" type="number" step="1" min="0" required></div>
+    <div class="input"><label>Stock crítico (opcional)</label><input id="pdStockCritico" type="number" step="1" min="0"></div>
+    <div class="input"><label>Categoría</label>
+      <select id="pdCategoria" required>
+        <option value="">Seleccione...</option>
+        <option>Audio</option>
+        <option>Computación</option>
+        <option>Accesorios</option>
+        <option>Gaming</option>
+      </select>
+    </div>
+    <div class="input"><label>Imagen (URL opcional)</label><input id="pdImagen"></div>
+  </div>
+  <input type="submit" value="Guardar">
+  <div class="error" id="errProducto"></div>
+</form>
+
+  </main>
+</div>
+<footer>
+  <div class="container small">Admin demo TokyoStore</div>
+</footer>
+</body>
+</html>

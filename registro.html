@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro - TokyoStore</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="scripts/regions.js"></script>
+  <script defer src="scripts/main.js"></script>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo_final.png" alt="logo"><span>TokyoStore</span>
+    </a>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="productos.html">Productos</a>
+      <a href="blog.html">Blogs</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="registro.html">Registro</a>
+      <a href="login.html">Login</a>
+      <a href="cart.html" class="cart-pill">🛒 <span id="cartCount">0</span></a>
+      <a href="admin/index.html" class="badge">Admin</a>
+    </nav>
+  </div>
+</header>
+<div class="container">
+
+<h1>Registro de usuario</h1>
+<form id="formRegistro" class="form card" novalidate>
+  <div class="grid cols-2">
+    <div class="input">
+      <label>RUN (sin puntos ni guion, ej: 19011022K)</label>
+      <input type="text" id="rgRun" minlength="7" maxlength="9" required>
+      <span class="error" id="errRun"></span>
+    </div>
+    <div class="input">
+      <label>Correo</label>
+      <input type="email" id="rgCorreo" maxlength="100" required>
+      <span class="error" id="errCorreo"></span>
+    </div>
+    <div class="input">
+      <label>Nombres</label>
+      <input type="text" id="rgNombre" maxlength="50" required>
+      <span class="error" id="errNombre"></span>
+    </div>
+    <div class="input">
+      <label>Apellidos</label>
+      <input type="text" id="rgApellidos" maxlength="100" required>
+      <span class="error" id="errApellidos"></span>
+    </div>
+    <div class="input">
+      <label>Fecha Nacimiento (opcional)</label>
+      <input type="date" id="rgFecha">
+    </div>
+    <div class="input">
+      <label>Tipo de Usuario</label>
+      <select id="rgTipo">
+        <option value="Cliente">Cliente</option>
+        <option value="Vendedor">Vendedor</option>
+        <option value="Administrador">Administrador</option>
+      </select>
+    </div>
+    <div class="input">
+      <label>Región</label>
+      <select id="rgRegion"></select>
+    </div>
+    <div class="input">
+      <label>Comuna</label>
+      <select id="rgComuna"></select>
+    </div>
+    <div class="input" style="grid-column:1/3">
+      <label>Dirección</label>
+      <input type="text" id="rgDireccion" maxlength="300" required>
+      <span class="error" id="errDireccion"></span>
+    </div>
+  </div>
+  <input type="submit" value="Crear cuenta">
+</form>
+
+</div>
+<footer>
+  <div class="container">
+    <div>© 2025 TokyoStore</div>
+  </div>
+</footer>
+</body>
+</html>

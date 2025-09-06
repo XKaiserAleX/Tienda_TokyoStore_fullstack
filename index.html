@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio - TokyoStore</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="scripts/regions.js"></script>
+  <script defer src="scripts/main.js"></script>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo_final.png" alt="logo"><span>TokyoStore</span>
+    </a>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="productos.html">Productos</a>
+      <a href="blog.html">Blogs</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="registro.html">Registro</a>
+      <a href="login.html">Login</a>
+      <a href="cart.html" class="cart-pill">🛒 <span id="cartCount">0</span></a>
+      <a href="admin/index.html" class="badge">Admin</a>
+    </nav>
+  </div>
+</header>
+<div class="container">
+
+<section class="hero">
+  <div class="card">
+    <h1>Bienvenido a <span>TokyoStore</span></h1>
+    <p>Somos tu tienda de gadgets: audífonos, smartwatches, accesorios y más. Tecnología confiable, buenos precios y atención rápida.</p>
+    <div style="display:flex;gap:10px;margin-top:14px">
+      <a class="btn" href="productos.html">Ver productos</a>
+      <a class="btn secondary" href="blog.html">Leer blog</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="assets/img/prod1.svg" alt="hero" style="width:100%;border-radius:14px;border:1px solid #1f2937">
+  </div>
+</section>
+
+<h2>Destacados</h2>
+<div id="homeProducts" class="grid cols-3"></div>
+
+</div>
+<footer>
+  <div class="container">
+    <div>© 2025 TokyoStore</div>
+  </div>
+</footer>
+</body>
+</html>

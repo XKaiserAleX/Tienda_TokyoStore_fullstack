@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto - TokyoStore</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="scripts/regions.js"></script>
+  <script defer src="scripts/main.js"></script>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo_final.png" alt="logo"><span>TokyoStore</span>
+    </a>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="productos.html">Productos</a>
+      <a href="blog.html">Blogs</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="registro.html">Registro</a>
+      <a href="login.html">Login</a>
+      <a href="cart.html" class="cart-pill">🛒 <span id="cartCount">0</span></a>
+      <a href="admin/index.html" class="badge">Admin</a>
+    </nav>
+  </div>
+</header>
+<div class="container">
+
+<h1>Contacto</h1>
+<form id="formContacto" class="form card" novalidate>
+  <div class="input">
+    <label>Nombre</label>
+    <input type="text" id="ctNombre" maxlength="100" required>
+    <span class="error" id="errCtNombre"></span>
+  </div>
+  <div class="input">
+    <label>Correo</label>
+    <input type="email" id="ctCorreo" maxlength="100">
+    <span class="error" id="errCtCorreo"></span>
+  </div>
+  <div class="input">
+    <label>Comentario</label>
+    <textarea id="ctComentario" maxlength="500" rows="5" required></textarea>
+    <span class="error" id="errCtComentario"></span>
+  </div>
+  <input type="submit" value="Enviar">
+</form>
+
+</div>
+<footer>
+  <div class="container">
+    <div>© 2025 TokyoStore</div>
+  </div>
+</footer>
+</body>
+</html>
