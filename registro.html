@@ -64,14 +64,18 @@
         <option value="Administrador">Administrador</option>
       </select>
     </div>
-    <div class="input">
-      <label>Región</label>
-      <select id="rgRegion"></select>
-    </div>
-    <div class="input">
-      <label>Comuna</label>
-      <select id="rgComuna"></select>
-    </div>
+   <div class="input">
+  <label for="region">Región</label>
+  <select id="region" required>
+    <option value="">Seleccione región</option>
+  </select>
+</div>
+   <div class="input">
+  <label for="comuna">Comuna</label>
+  <select id="comuna" required>
+    <option value="">Seleccione comuna</option>
+  </select>
+</div>
     <div class="input" style="grid-column:1/3">
       <label>Dirección</label>
       <input type="text" id="rgDireccion" maxlength="300" required>
@@ -88,4 +92,5 @@
   </div>
 </footer>
 </body>
+<script src="scripts/regions.js" defer></script>
 </html>
