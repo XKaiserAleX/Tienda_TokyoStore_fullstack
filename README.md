@@ -14,3 +14,10 @@ Proyecto frontend de tienda online con HTML, CSS y JavaScript.
 - **RUN (RUT)** con dígito verificador
 - **Región/Comuna** desde arreglo JS
 - **Productos** y **usuarios** 
+
+
+## Informacion
+El usuario **Victus101** que aparece en algunos commits corresponde también a mí.  
+Al inicio, mi terminal estaba configurada con la cuenta personal de mi PC, por eso algunos commits quedaron registrados con ese nombre.  
+
+Ya corregí la configuración y ahora todos los commits salen con mi cuenta de GitHub institucional (**XKaiserAleX**).  
