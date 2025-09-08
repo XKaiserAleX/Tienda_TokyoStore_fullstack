@@ -17,13 +17,39 @@ const LS = {
 // Seed sample data if empty
 function seedData(){
   if(!LS.get('products')){
-    const sample = [
-      {code:"HD2025", name:"Audífonos inalámbricos", description:"Bluetooth, micrófono, cancelación de ruido.", price:39990, stock:15, stockCritico:3, category:"Audio", image:"assets/img/gamersir.jpg"},
-      {code:"KBMECH", name:"Teclado mecánico", description:"Switches blue, RGB.", price:49990, stock:10, stockCritico:2, category:"Computación", image:"assets/img/gamesir-x2-tipo-c.jpg"},
-      {code:"MOUSEG", name:"Mouse gamer", description:"16000 DPI, 6 botones.", price:29990, stock:20, stockCritico:4, category:"Gaming", image:"assets/img/prod3.svg"},
-      {code:"WEBCAMFHD", name:"Webcam FullHD", description:"1080p, autofoco.", price:27990, stock:12, stockCritico:2, category:"Accesorios", image:"assets/img/prod4.svg"},
-      {code:"SPEAKBT", name:"Parlante Bluetooth", description:"10W, resistente salpicaduras.", price:34990, stock:8, stockCritico:2, category:"Audio", image:"assets/img/prod5.svg"},
-    ];
+ const sample = [
+  {
+    code: "HD2025",
+    name: "Control Gamer Inalámbrico",
+    description: "Mando inalámbrico con vibración, luces LED y batería recargable. Compatible con PC y consolas.",
+    price: 39990,
+    stock: 15,
+    stockCritico: 3,
+    category: "Accesorios",
+    image: "assets/img/gamersir.jpg"
+  },
+  {
+    code: "KBMECH",
+    name: "GameSir X2 Tipo-C",
+    description: "Control telescópico para smartphones con puerto USB-C, ideal para gaming en la nube.",
+    price: 49990,
+    stock: 10,
+    stockCritico: 2,
+    category: "Computación",
+    image: "assets/img/gamesir-x2-tipo-c.jpg"
+  },
+  {
+    code: "MOUSEG",
+    name: "Mouse Gamer Logitech G",
+    description: "Sensor óptico de alta precisión, 6 botones programables y diseño ergonómico.",
+    price: 29990,
+    stock: 20,
+    stockCritico: 4,
+    category: "Gaming",
+    image: "assets/img/mouse.webp"
+  }
+];
+
     LS.set('products', sample);
   }
   if(!LS.get('users')){
