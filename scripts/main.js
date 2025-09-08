@@ -47,7 +47,37 @@ function seedData(){
     stockCritico: 4,
     category: "Gaming",
     image: "assets/img/mouse.webp"
-  }
+  },
+  {
+  code: "CHAIRG",
+  name: "Silla Gamer Ergonómica",
+  description: "Silla con soporte lumbar, reposabrazos ajustables y diseño reclinable.",
+  price: 129990,
+  stock: 5,
+  stockCritico: 1,
+  category: "Gaming",
+  image: "assets/img/silla_gamer.webp"
+},
+{
+  code: "MON24FHD",
+  name: "Monitor FullHD 24\"",
+  description: "Pantalla IPS 1920x1080, 75Hz, conector HDMI y VGA.",
+  price: 119990,
+  stock: 8,
+  stockCritico: 2,
+  category: "Computación",
+  image: "assets/img/monitor.jpg"
+},
+{
+  code: "NBGTX1650",
+  name: "Notebook Gamer i5 + GTX1650",
+  description: "Notebook 15.6\" FullHD, Intel Core i5, 8GB RAM, SSD 512GB, GTX 1650.",
+  price: 699990,
+  stock: 3,
+  stockCritico: 1,
+  category: "Computación",
+  image: "assets/img/notebook.webp"
+}
 ];
 
     LS.set('products', sample);
