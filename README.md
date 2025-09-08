@@ -1,23 +1,34 @@
-# TokyoStore — DSY1104 Evaluación Parcial 1
+# TokyoStore — Evaluación Parcial 1
 
-Proyecto frontend de tienda online con HTML, CSS y JavaScript.
+Proyecto **frontend de tienda online** desarrollado con **HTML, CSS y JavaScript** para la asignatura **Fullstack**.  
+El objetivo es simular una tienda de gadgets con validaciones, carrito de compras y vistas de administración.
 
-## Estructura
-- `index.html`, `productos.html`, `product.html`, `blog.html`, `blog1.html`, `blog2.html`, `nosotros.html`, `contacto.html`, `registro.html`, `login.html`, `cart.html`
-<!-- - `admin/` dashboard,mantenedores de productos y usuarios -->
-- `scripts/main.js`, `scripts/admin.js`, `scripts/regions.js`
-- `style.css`, `assets/img/*`
+---
 
-## Funcionalidad
-- **Carrito** con 
-- **Validaciones** (login, registro, contacto, productos, usuarios)
-- **RUN (RUT)** con dígito verificador
-- **Región/Comuna** desde arreglo JS
-- **Productos** y **usuarios** 
+## Estructura del proyecto
+- Páginas principales:  
+  `index.html`, `productos.html`, `product.html`, `blog.html`, `blog1.html`, `blog2.html`,  
+  `nosotros.html`, `contacto.html`, `registro.html`, `login.html`, `cart.html`
+- Scripts:  
+  `scripts/main.js`, `scripts/admin.js`, `scripts/regions.js`
+- Estilos y recursos:  
+  `style.css`, `assets/img/*`
+- *(Incluye sección `admin/` con dashboard y mantenedores de productos/usuarios)*
 
+---
 
-## Informacion
-El usuario **Victus101** que aparece en algunos commits corresponde también a mí.  
-Al inicio, mi terminal estaba configurada con la cuenta personal de mi PC, por eso algunos commits quedaron registrados con ese nombre.  
+## Funcionalidades implementadas
+- **Carrito de compras** dinámico con actualización de ítems y totales.  
+- **Validaciones** en formularios (login, registro, contacto, productos, usuarios).  
+- **RUN (RUT)** con cálculo automático de dígito verificador.  
+- **Selección de Región/Comuna** cargada desde arreglo JS.  
+- Gestión de **productos** y **usuarios** mediante LocalStorage.  
 
-Ya corregí la configuración y ahora todos los commits salen con mi cuenta de GitHub institucional (**XKaiserAleX**).  
+---
+
+## Información sobre commits
+En algunos commits aparece el usuario **Victus101**.  
+Esto se debe a que inicialmente mi terminal estaba vinculada a la cuenta personal de mi PC.  
+
+La configuración ya fue corregida y actualmente todos los commits se registran con mi cuenta institucional de GitHub:  
+**XKaiserAleX**
