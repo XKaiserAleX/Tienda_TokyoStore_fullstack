@@ -176,7 +176,7 @@ function renderCart(){
     const sub = p.price * it.qty; total += sub;
     return `
       <div style="display:flex;gap:14px;align-items:center;border-bottom:1px solid #1f2937;padding:10px 0">
-        <img src="${p.image||'assets/img/prod1.svg'}" style="width:90px;border-radius:10px;border:1px solid #1f2937">
+        <img src="${p.image||'assets/img/audifonos.jpg'}" style="width:90px;border-radius:10px;border:1px solid #1f2937">
         <div style="flex:1">
           <b>${p.name}</b>
           <div class="small">${fmtCLP(p.price)} — Stock: ${p.stock}</div>
