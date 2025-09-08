@@ -18,8 +18,8 @@ const LS = {
 function seedData(){
   if(!LS.get('products')){
     const sample = [
-      {code:"HD2025", name:"Audífonos inalámbricos", description:"Bluetooth, micrófono, cancelación de ruido.", price:39990, stock:15, stockCritico:3, category:"Audio", image:"assets/img/prod1.svg"},
-      {code:"KBMECH", name:"Teclado mecánico", description:"Switches blue, RGB.", price:49990, stock:10, stockCritico:2, category:"Computación", image:"assets/img/prod2.svg"},
+      {code:"HD2025", name:"Audífonos inalámbricos", description:"Bluetooth, micrófono, cancelación de ruido.", price:39990, stock:15, stockCritico:3, category:"Audio", image:"assets/img/gamersir.jpg"},
+      {code:"KBMECH", name:"Teclado mecánico", description:"Switches blue, RGB.", price:49990, stock:10, stockCritico:2, category:"Computación", image:"assets/img/gamesir-x2-tipo-c.jpg"},
       {code:"MOUSEG", name:"Mouse gamer", description:"16000 DPI, 6 botones.", price:29990, stock:20, stockCritico:4, category:"Gaming", image:"assets/img/prod3.svg"},
       {code:"WEBCAMFHD", name:"Webcam FullHD", description:"1080p, autofoco.", price:27990, stock:12, stockCritico:2, category:"Accesorios", image:"assets/img/prod4.svg"},
       {code:"SPEAKBT", name:"Parlante Bluetooth", description:"10W, resistente salpicaduras.", price:34990, stock:8, stockCritico:2, category:"Audio", image:"assets/img/prod5.svg"},
@@ -87,7 +87,7 @@ function renderHome(){
   const products = LS.get('products', []);
   const top = products.slice(0,3).map(p => `
     <div class="card product">
-      <a href="product.html?id=${encodeURIComponent(p.code)}"><img src="${p.image||'assets/img/prod1.svg'}" alt=""></a>
+      <a href="product.html?id=${encodeURIComponent(p.code)}"><img src="${p.image||'assets/img/gamersir.jpg'}" alt=""></a>
       <b>${p.name}</b>
       <span class="price">${fmtCLP(p.price)}</span>
       <div style="display:flex;gap:8px">
@@ -105,7 +105,7 @@ function renderProducts(){
   const products = LS.get('products', []);
   el.innerHTML = products.map(p => `
     <div class="card product">
-      <a href="product.html?id=${encodeURIComponent(p.code)}"><img src="${p.image||'assets/img/prod1.svg'}" alt=""></a>
+      <a href="product.html?id=${encodeURIComponent(p.code)}"><img src="${p.image||'assets/img/gamersir.jpg'}" alt=""></a>
       <div style="display:flex;align-items:center;justify-content:space-between">
         <b>${p.name}</b><span class="badge">${p.category}</span>
       </div>
@@ -124,7 +124,7 @@ function renderProductDetail(){
   if(!p){ holder.innerHTML = `<div class="notice">Producto no encontrado.</div>`; return; }
   holder.innerHTML = `
     <div class="grid cols-2">
-      <div class="card"><img src="${p.image||'assets/img/prod1.svg'}" style="width:100%;border-radius:12px"></div>
+      <div class="card"><img src="${p.image||'assets/img/gamersir.jpg'}" style="width:100%;border-radius:12px"></div>
       <div class="card">
         <h1>${p.name}</h1>
         <p class="small">${p.description||''}</p>
@@ -140,9 +140,9 @@ function renderProductDetail(){
 function renderBlogList(){
   const el = $("#blogList"); if(!el) return;
   const posts = [
-    {href:"blog1.html", title:"Lanzamiento de TechGadgets", desc:"Presentamos la tienda de demo DSY1104.", img:"assets/img/prod2.svg"},
-    {href:"blog2.html", title:"5 Tips para elegir audífonos", desc:"Consejos rápidos antes de comprar.", img:"assets/img/prod3.svg"},
-    {href:"blog1.html", title:"Nuestra misión", desc:"Por qué armamos este proyecto.", img:"assets/img/prod4.svg"}
+    {href:"blog1.html", title:"Lanzamiento de TokyoStore", desc:"Presentamos nuestra tienda Online.", img:"assets/img/store.jpg"},
+    {href:"blog2.html", title:"5 Tips para elegir audífonos", desc:"Consejos rápidos antes de comprar.", img:"assets/img/audifonos.jpg"},
+    {href:"blog1.html", title:"Nuestra misión", desc:"Por qué armamos este proyecto.", img:"assets/img/logo_final.png"}
   ];
   el.innerHTML = posts.map(b => `
     <a class="card" href="${b.href}">
