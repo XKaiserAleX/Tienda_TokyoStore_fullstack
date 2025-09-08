@@ -231,3 +231,37 @@ footer{
 }
 
 .small{font-size:.9rem;color:#94a3b8}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--card);
+  border: 1px solid #1f2937;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  transition: transform 0.2s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 15px;
+}
+
+.blog-content h3 {
+  margin: 0 0 6px;
+}
+
+.blog-content p {
+  color: var(--muted);
+  margin-bottom: 10px;
+}
