@@ -194,20 +194,42 @@ function renderProductDetail(){
 
 // --- Blog list ---
 function renderBlogList(){
-  const el = $("#blogList"); if(!el) return;
+  const el = $("#blogList"); 
+  if(!el) return;
+
   const posts = [
-    {href:"blog1.html", title:"Lanzamiento de TokyoStore", desc:"Presentamos nuestra tienda Online.", img:"assets/img/store.jpg"},
-    {href:"blog2.html", title:"5 Tips para elegir audífonos", desc:"Consejos rápidos antes de comprar.", img:"assets/img/audifonos.jpg"},
-    {href:"blog1.html", title:"Nuestra misión", desc:"Por qué armamos este proyecto.", img:"assets/img/logo_final.png"}
+    {
+      href:"blog1.html", 
+      title:"Lanzamiento de TokyoStore", 
+      desc:"Conoce cómo nació este proyecto y nuestra visión de futuro para convertirnos en tu tienda favorita de gadgets.", 
+      img:"assets/img/store.jpg"
+    },
+    {
+      href:"blog2.html", 
+      title:"5 Tips para elegir audífonos", 
+      desc:"Antes de comprar tus próximos audífonos, revisa estos consejos sobre comodidad, sonido y durabilidad.", 
+      img:"assets/img/audifonos.jpg"
+    },
+    {
+      href:"nosotros.html", 
+      title:"Nuestra misión y valores", 
+      desc:"Descubre por qué creamos TokyoStore y cuáles son los principios que guían nuestra tienda online.", 
+      img:"assets/img/logo_final.png"
+    }
   ];
+
   el.innerHTML = posts.map(b => `
-    <a class="card" href="${b.href}">
-      <img src="${b.img}" style="width:100%;border-radius:10px;margin-bottom:8px">
-      <b>${b.title}</b>
-      <p class="small">${b.desc}</p>
-    </a>
+    <div class="card blog-card">
+      <img src="${b.img}" alt="${b.title}" class="blog-img">
+      <div class="blog-content">
+        <h3>${b.title}</h3>
+        <p class="small">${b.desc}</p>
+        <a href="${b.href}" class="btn small">Leer más</a>
+      </div>
+    </div>
   `).join('');
 }
+
 
 // --- Cart logic ---
 function addToCart(code){
