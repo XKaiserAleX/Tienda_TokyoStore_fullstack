@@ -1,5 +1,11 @@
 # TokyoStore — Evaluación Parcial 1
 
+## Autores
+
+- Jorge Zapata
+- José Márquez
+
+
 Proyecto **frontend de tienda online** desarrollado con **HTML, CSS y JavaScript** para la asignatura **Fullstack**.  
 El objetivo es simular una tienda de gadgets con validaciones, carrito de compras y vistas de administración.
 
